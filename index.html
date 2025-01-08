@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Mensajes</title>
+    <link rel="stylesheet" href="styles.css/style.css">
+    <script defer src="scripts/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <!-- Operadores dinámicamente generados desde el JS -->
+            <div id="operators">
+                <!-- Placeholder para operadores -->
+            </div>
+        </div>
+        <div class="chat-window">
+            <div class="chat-header">
+                <h2 id="chat-title">Selecciona un chat</h2>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <!-- Los mensajes del operador se cargarán aquí -->
+            </div>
+            <div class="chat-input">
+                <input 
+                    type="text" 
+                    id="message-input" 
+                    placeholder="Escribe un mensaje"
+                    onkeypress="sendMessage(event)">
+                <button id="send-btn">Enviar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
